@@ -1,0 +1,10 @@
+language: java
+
+jdk: oraclejdk8
+
+before_script:
+    - sudo apt-get install -qq dos2unix
+before_install:
+    - chmod +x travis.sh
+script:
+    - ./travis.sh
